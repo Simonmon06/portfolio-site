@@ -9,7 +9,7 @@ import {
   GlobalStyle,
 } from "./AppWrapper.styles";
 import AboutMe from "../AboutMe/AboutMe";
-import { ILanguageTexts, LANGUAGE } from "@/utils/text";
+import { type ILanguageTexts, englishTexts } from "@/utils/text";
 import { usePathname } from "next/navigation";
 
 interface IAppContext {
@@ -35,7 +35,7 @@ const AppWrapper = ({ children }: { children: React.ReactNode }) => {
   const appContextValue = {
     theme: THEME[theme],
     themeType: theme,
-    languageTexts: LANGUAGE[language],
+    languageTexts: englishTexts,
     toggleTheme,
     isHomePage,
   };

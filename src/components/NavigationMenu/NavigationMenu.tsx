@@ -7,8 +7,7 @@ import {
   NavigationMenusBox,
 } from "./NavigationMenu.styles";
 import { AppContext } from "../AppWrapper/AppWrapper";
-import { RxFontFamily } from "react-icons/rx";
-import { RiChatAiLine, RiEnglishInput } from "react-icons/ri";
+import { RiChatAiLine } from "react-icons/ri";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import { NavigationMenus } from "./NavigationMenu.utils";
 import { usePathname } from "next/navigation";

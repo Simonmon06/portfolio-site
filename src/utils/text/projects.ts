@@ -1,0 +1,111 @@
+import { SKILLS } from "@/utils/skillIcons";
+import { ILanguageTexts } from "../types";
+
+export const projects: ILanguageTexts["projects"] = {
+  title: "Featured Projects",
+  viewProjects: "View All Projects",
+  viewLivePreview: "View Live Preview",
+  description: "Description",
+  technologies: "Technologies",
+  functionalities: "Functionalities",
+  projectList: [
+    {
+      id: "natour",
+      name: "Natour",
+      description:
+        "A productivity app that uses AI to help users organize, prioritize, and automate their daily tasks in nature.",
+      images: [
+        "/images/natour/natour-1.png",
+        "/images/natour/natour-2.png",
+        "/images/natour/natour-3.png",
+        "/images/natour/natour-4.png",
+        "/images/natour/natour-5.png",
+      ],
+      functionality: [
+        "AI-powered task suggestions",
+        "Calendar and reminders integration",
+        "Automated task categorization",
+        "Collaboration and shared task lists",
+        "Progress tracking and analytics",
+      ],
+      technologies: [
+        SKILLS.react,
+        SKILLS.nodeJs,
+        SKILLS.mongodb,
+        SKILLS.openai,
+        SKILLS.redux,
+        SKILLS.docker,
+      ],
+      livePreview: "https://task-manager-ai.example.com",
+      github: "#",
+      primaryColor: "#AC3459",
+      secoundaryColor: "#F7F7F7",
+    },
+    {
+      id: "crown-clothing",
+      name: "Crown Clothing",
+      description:
+        "An e-commerce platform for trendy apparel with seamless checkout and real-time inventory.",
+      images: [
+        "/images/crown-clothing/crown-clothing-1.png",
+        "/images/crown-clothing/crown-clothing-2.png",
+        "/images/crown-clothing/crown-clothing-3.png",
+        "/images/crown-clothing/crown-clothing-4.png",
+        "/images/crown-clothing/crown-clothing-5.png",
+      ],
+      functionality: [
+        "User authentication and profile management",
+        "Shopping cart with Stripe payment integration",
+        "Admin dashboard for product and order management",
+        "Product search and filtering",
+        "Order history and tracking",
+      ],
+      technologies: [
+        SKILLS.html,
+        SKILLS.sass,
+        SKILLS.javascipt,
+        SKILLS.react,
+        SKILLS.cypress,
+        SKILLS.redux,
+        SKILLS.styledComponnets,
+        SKILLS.stripe,
+      ],
+      livePreview: "https://crown-clothing.example.com",
+      github: "#",
+      primaryColor: "#000000",
+      secoundaryColor: "#FFFFFF",
+    },
+    {
+      id: "nexter",
+      name: "Nexter",
+      description:
+        "A social platform for developers to share projects, collaborate, and find theri next job opportunities.",
+      images: [
+        "/images/nexter/nexter-1.png",
+        "/images/nexter/nexter-2.png",
+        "/images/nexter/nexter-3.png",
+        "/images/nexter/nexter-4.png",
+        "/images/nexter/nexter-5.png",
+      ],
+      functionality: [
+        "Real-time chat and messaging",
+        "Project portfolio showcase",
+        "Job board with application tracking",
+        "Developer blog and article publishing",
+        "Event and meetup organization",
+      ],
+      technologies: [
+        SKILLS.react,
+        SKILLS.nodeJs,
+        SKILLS.express,
+        SKILLS.postgresql,
+        SKILLS.redux,
+        SKILLS.webhooks,
+      ],
+      livePreview: "https://dev-connect.example.com",
+      github: "#",
+      primaryColor: "#c39963",
+      secoundaryColor: "#2E2E4B",
+    },
+  ],
+};
