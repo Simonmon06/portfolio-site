@@ -16,8 +16,8 @@ export interface ILanguageTexts {
       date: string;
       program: string;
       school: string;
-      description: string;
-      workload: string[];
+      description?: string;
+      workload?: string[];
     }[];
   };
   workHistory: {

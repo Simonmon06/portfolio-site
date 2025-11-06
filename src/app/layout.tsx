@@ -18,7 +18,7 @@ const salsa = Salsa({
 
 export const metadata: Metadata = {
   title: `${englishTexts.aboutMe.name} | Home`,
-  description: "My awesome portfolio site",
+  description: "My portfolio site",
 };
 
 export default function RootLayout({
