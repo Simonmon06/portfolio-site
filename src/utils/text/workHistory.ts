@@ -1,6 +1,6 @@
-import { SKILLS } from "@/utils/skillIcons";
+import { SkillKey } from "@/utils/skillIcons";
 import { ILanguageTexts } from "../types";
-
+import {} from "@/utils/skillIcons";
 export const workHistory: ILanguageTexts["workHistory"] = {
   title: "Work History",
   viewWorkHistory: "View Full Work History",
@@ -21,13 +21,13 @@ export const workHistory: ILanguageTexts["workHistory"] = {
         "Worked in an Agile cadence, pulled tasks from the backlog, maintained accurate ticket status/notes/screen reordings, gave concise daily standup updates, and set up meetings with QA/BE/UX to resolve blockers.",
       ],
       technologies: [
-        SKILLS.javascipt,
-        SKILLS.html,
-        SKILLS.css,
-        SKILLS.react,
-        SKILLS.redux,
-        SKILLS.github,
-        SKILLS.jira,
+        "javascipt",
+        "html",
+        "css",
+        "react",
+        "redux",
+        "github",
+        "jira",
       ],
     },
   ],

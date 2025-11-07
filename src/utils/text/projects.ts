@@ -67,7 +67,6 @@ export const projects: ILanguageTexts["projects"] = {
         SKILLS.react,
         SKILLS.cypress,
         SKILLS.redux,
-        SKILLS.styledComponnets,
         SKILLS.stripe,
       ],
       livePreview: "https://crown-clothing.example.com",

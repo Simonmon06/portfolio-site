@@ -1,4 +1,5 @@
 import { JSX } from "react";
+import type { SkillKey } from "./skillIcons";
 
 export interface ILanguageTexts {
   aboutMe: {
@@ -31,14 +32,7 @@ export interface ILanguageTexts {
       endDate: string;
       companyDescription: string;
       responsibilities: string[];
-      technologies: {
-        name: string;
-        icon: {
-          normal: JSX.Element;
-          large: JSX.Element;
-        };
-        type: string;
-      }[];
+      technologies: SkillKey[];
     }[];
   };
   skills: {
@@ -48,6 +42,7 @@ export interface ILanguageTexts {
       name: string;
       id: string;
       description: string;
+      icons: SkillKey[];
     }[];
   };
   projects: {
@@ -63,14 +58,7 @@ export interface ILanguageTexts {
       description: string;
       images: string[];
       functionality: string[];
-      technologies: {
-        name: string;
-        icon: {
-          normal: JSX.Element;
-          large: JSX.Element;
-        };
-        type: string;
-      }[];
+      technologies: SkillKey[];
       livePreview?: string;
       github?: string;
       primaryColor?: string;

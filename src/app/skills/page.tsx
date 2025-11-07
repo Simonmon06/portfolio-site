@@ -35,7 +35,7 @@ export default function SkillsPage() {
 
   return (
     <>
-      {skillsCategoriesToShow.map(({ description, name, id }, index) => (
+      {skillsCategoriesToShow.map(({ description, name, icons }, index) => (
         <SkillsIntegrationsContainer key={index}>
           <SkillsDetails>
             <h1 className="title">
@@ -67,17 +67,21 @@ export default function SkillsPage() {
             )}
           </SkillsDetails>
           <SkillsBadgesContainer>
-            {Object.values(SKILLS)
-              .filter(({ type }) => {
-                const selectedId = isHomePage ? currentSkillMenu.id : id;
-                return type === selectedId;
-              })
+            {(isHomePage ? currentSkillMenu.icons : icons)
               .slice(0, 14)
-              .map(({ name, icon }, index) => {
+              .map((iconKey, index) => {
+                const iconDefinition = SKILLS[iconKey];
+
+                if (!iconDefinition) {
+                  return null;
+                }
                 return (
-                  <SkillBadge key={index} className={`pos-${index + 1}`}>
-                    <div className="icon">{icon["large"]}</div>
-                    <p className="skill">{name}</p>
+                  <SkillBadge
+                    key={`${iconKey}-${index}`}
+                    className={`pos-${index + 1}`}
+                  >
+                    <div className="icon">{iconDefinition.icon["large"]}</div>
+                    <p className="skill">{iconDefinition.name}</p>
                   </SkillBadge>
                 );
               })}
