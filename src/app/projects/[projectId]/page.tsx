@@ -1,7 +1,7 @@
 "use client";
 
 import { AppContext } from "../../../components/AppWrapper/AppWrapper";
-import React, { use, useContext, useEffect, useState } from "react";
+import React, { use, useContext, useEffect, useMemo, useState } from "react";
 import {
   ProjectContainer,
   ProjectInfo,
@@ -16,12 +16,23 @@ import { SKILLS, SkillKey } from "@/utils/skillIcons";
 
 const Project = ({ params }: { params: Promise<{ projectId: string }> }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const { languageTexts, theme } = useContext(AppContext)!;
+  const { languageTexts } = useContext(AppContext)!;
   const projectId = use(params).projectId;
   const PROJECT = languageTexts.projects.projectList.find(
     ({ id }) => id === projectId
   );
 
+  const PLACEHOLDER_IMAGE = "/images/no_image_placeholder.png";
+
+  const projectImages = useMemo(() => {
+    if (!PROJECT?.images?.length) {
+      return [PLACEHOLDER_IMAGE];
+    }
+
+    return PROJECT.images.map((image) => image || PLACEHOLDER_IMAGE);
+  }, [PROJECT]);
+
+  const imagesCount = projectImages.length;
   useEffect(() => {
     const timer = setInterval(() => {
       if (imagesCount) {
@@ -31,15 +42,16 @@ const Project = ({ params }: { params: Promise<{ projectId: string }> }) => {
       }
     }, 2000);
     return () => clearInterval(timer);
-  }, []);
+  }, [imagesCount]);
 
   if (!PROJECT) {
     return notFound();
   }
 
-  const imagesCount = PROJECT?.images.length;
-
   function getNextIndices(currentIndex: number, length: number) {
+    if (length === 0) {
+      return { thumbnail1: 0, thumbnail2: 0 };
+    }
     const thumbnail1 = (currentIndex + 1) % length;
     const thumbnail2 = (currentIndex + 2) % length;
 
@@ -55,7 +67,7 @@ const Project = ({ params }: { params: Promise<{ projectId: string }> }) => {
     <ProjectContainer>
       <ProjectThumbnails>
         <Image
-          src={PROJECT.images[currentImageIndex]}
+          src={projectImages[currentImageIndex]}
           alt="Image one"
           width={800}
           height={600}
@@ -63,14 +75,14 @@ const Project = ({ params }: { params: Promise<{ projectId: string }> }) => {
         />
         <div className="thumbnails">
           <Image
-            src={PROJECT.images[thumbnail1]}
+            src={projectImages[thumbnail1]}
             alt="Image one"
             width={800}
             height={600}
             className="enlargedImage"
           />
           <Image
-            src={PROJECT.images[thumbnail2]}
+            src={projectImages[thumbnail2]}
             alt="Image one"
             width={800}
             height={600}
