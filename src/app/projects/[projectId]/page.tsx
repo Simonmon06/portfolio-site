@@ -112,12 +112,16 @@ const Project = ({ params }: { params: Promise<{ projectId: string }> }) => {
             </ListItems>
           </span>
           <span className="links">
-            <a className="livePreviewButton" href={PROJECT.livePreview}>
-              {languageTexts.projects.viewLivePreview}
-            </a>
-            <a href={PROJECT.github}>
-              <SiGithub size={"1.7vw"} color={PROJECT.primaryColor} />
-            </a>
+            {PROJECT.livePreview && (
+              <a className="livePreviewButton" href={PROJECT.livePreview}>
+                {languageTexts.projects.viewLivePreview}
+              </a>
+            )}
+            {PROJECT.github && (
+              <a href={PROJECT.github}>
+                <SiGithub size={"1.7vw"} color={PROJECT.primaryColor} />
+              </a>
+            )}
           </span>
         </div>
         <div className="skillsList">

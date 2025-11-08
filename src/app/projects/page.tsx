@@ -36,6 +36,7 @@ const Projects = () => {
           {
             name,
             livePreview,
+            github,
             images,
             technologies,
             description,
@@ -47,12 +48,16 @@ const Projects = () => {
           <Project key={index}>
             <h2 className="title">{name}</h2>
             <div className="links">
-              <a href={livePreview} className="livePreviewButton">
-                {languageTexts.projects.viewLivePreview}
-              </a>
-              <a href={livePreview}>
-                <SiGithub size={"1.7vw"} color={theme.primaryColor} />
-              </a>
+              {livePreview && (
+                <a href={livePreview} className="livePreviewButton">
+                  {languageTexts.projects.viewLivePreview}
+                </a>
+              )}
+              {github && (
+                <a href={github}>
+                  <SiGithub size={"1.7vw"} color={theme.primaryColor} />
+                </a>
+              )}
             </div>
             <SlideShow images={images} />
             <ProjectsDetails href={`/projects/${id}`} className="detailsCard">
