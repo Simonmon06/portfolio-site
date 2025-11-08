@@ -1,10 +1,15 @@
-import { FaCss3Alt, FaReact } from "react-icons/fa";
+import { FaAws, FaCss3Alt, FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoSass } from "react-icons/io5";
 import { FaJs } from "react-icons/fa";
 import {
+  SiGithubactions,
   SiGitlab,
   SiJira,
+  SiKubernetes,
+  SiNginx,
+  SiPrisma,
+  SiPython,
   SiRadixui,
   SiTailwindcss,
   SiTypescript,
@@ -64,6 +69,7 @@ import {
 } from "react-icons/si";
 import { FaRobot } from "react-icons/fa"; // For generic AI/ML platforms
 import { FaBrain } from "react-icons/fa"; // For general AI
+import { GiBearHead } from "react-icons/gi";
 
 export const SKILLS = {
   react: {
@@ -134,6 +140,57 @@ export const SKILLS = {
     icon: {
       normal: <SiTypescript size={"1.1vw"} color="#397CC9" />,
       large: <SiTypescript size={"2vw"} color="#397CC9" />,
+    },
+  },
+  prisma: {
+    name: "Prisma",
+    icon: {
+      normal: <SiPrisma size={"1.1vw"} color="#2D3748" />,
+      large: <SiPrisma size={"2vw"} color="#2D3748" />,
+    },
+  },
+  kubernetes: {
+    name: "Kubernetes",
+    icon: {
+      normal: <SiKubernetes size={"1.1vw"} color="#326CE5" />,
+      large: <SiKubernetes size={"2vw"} color="#326CE5" />,
+    },
+  },
+
+  aws: {
+    name: "AWS",
+    icon: {
+      normal: <FaAws size={"1.1vw"} color="#FF9900" />,
+      large: <FaAws size={"2vw"} color="#FF9900" />,
+    },
+  },
+  nginx: {
+    name: "Nginx",
+    icon: {
+      normal: <SiNginx size={"1.1vw"} color="#009639" />,
+      large: <SiNginx size={"2vw"} color="#009639" />,
+    },
+  },
+  githubActions: {
+    name: "GitHub Actions",
+    icon: {
+      normal: <SiGithubactions size={"1.1vw"} color="#2088FF" />,
+      large: <SiGithubactions size={"2vw"} color="#2088FF" />,
+    },
+  },
+  zustand: {
+    name: "Zustand",
+    icon: {
+      normal: <GiBearHead size={"1.1vw"} color="#6B7280" />,
+      large: <GiBearHead size={"2vw"} color="#6B7280" />,
+    },
+    // type: "frotEnd",
+  },
+  python: {
+    name: "Python",
+    icon: {
+      normal: <SiPython size={"1.1vw"} color="#3776AB" />,
+      large: <SiPython size={"2vw"} color="#3776AB" />,
     },
   },
   redux: {
