@@ -58,9 +58,13 @@ const slideRightLeft = keyframes`
 export const Project = styled.div`
   display: grid;
   grid-template-columns: 45% 55%;
-  width: 100%;
-  position: relative;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title title"
+    "slideshow details";
   width: 90%;
+  position: relative;
+  margin: 0 auto;
   transition: z-index 0.3s ease-in-out;
 
   &:hover .detailsCard {
@@ -69,10 +73,10 @@ export const Project = styled.div`
   }
 
   .title {
-    position: absolute;
-    top: 3%;
-    right: 25%;
-    font-size: 1.5vw;
+    grid-area: title;
+    margin: 0 0 1.5vw;
+    font-size: 1.8vw;
+    text-align: center;
   }
 
   .links {
@@ -104,6 +108,7 @@ export const Project = styled.div`
 `;
 
 export const SlideShowContainer = styled.div`
+  grid-area: slideshow;
   max-height: 25vw;
   transform: translateX(10%);
   z-index: 2;
@@ -121,6 +126,7 @@ export const SlideShowContainer = styled.div`
 `;
 
 export const ProjectsDetails = styled(Link)`
+  grid-area: details;
   background-color: ${(props) => props.theme.background};
   display: flex;
   flex-direction: column;

@@ -62,15 +62,11 @@ export const projects: ILanguageTexts["projects"] = {
       secoundaryColor: "#FFFFFF",
     },
     {
-      id: "chat-app",
-      name: "Real Time Chat App",
+      id: "Serverful and Serverless",
+      name: "CMPT 756 · Microservices: Serverful vs Serverless (Course Project)",
       description:
         "Built a full-stack chat platform (React/TypeScript, Tailwind CSS, shadcn/ui, Node/Express, Prisma/PostgreSQL) with authentication, and conversation management. End-to-end design & implementation: UI/UX, data model, and APIs.",
-      images: [
-        "/images/chat-app/chat-app-1.png",
-        "/images/chat-app/chat-app-2.png",
-        "/images/chat-app/chat-app-3.png",
-      ],
+      images: [],
       functionality: [
         "Architected a microservice-based application, building all services from the ground up using Node.js.",
         "Containerized the services with Docker and deployed them to AWS EKS using Kubernetes, managing ingress with Nginx.",
