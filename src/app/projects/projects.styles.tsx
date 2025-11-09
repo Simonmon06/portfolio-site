@@ -58,10 +58,11 @@ const slideRightLeft = keyframes`
 export const Project = styled.div`
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
     "title title"
-    "slideshow details";
+    "slideshow details"
+    "links details";
   width: 90%;
   position: relative;
   margin: 0 auto;
@@ -80,12 +81,12 @@ export const Project = styled.div`
   }
 
   .links {
-    position: absolute;
-    bottom: 0;
-    left: 15%;
+    grid-area: links;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1vw;
+    margin-top: 1.5vw;
 
     .livePreviewButton {
       background-color: ${(props) => props.theme.primaryColor};

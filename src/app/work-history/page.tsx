@@ -38,6 +38,7 @@ export default function WorkHistoryPage() {
             jobTitle,
             startDate,
             endDate,
+            additionalDateRanges,
             companyDescription,
             responsibilities,
             technologies,
@@ -48,9 +49,19 @@ export default function WorkHistoryPage() {
             <JobHistoryItemSummary>
               <h1 className="company">{companyName}</h1>
               <p className="role">{jobTitle}</p>
-              <p className="date">
-                {startDate} - {endDate}
-              </p>
+              <div className="dates">
+                <p className="date">
+                  {startDate} - {endDate}
+                </p>
+                {additionalDateRanges?.map(
+                  ({ startDate: rangeStart, endDate: rangeEnd, note }, idx) => (
+                    <p key={idx} className="date">
+                      {rangeStart} - {rangeEnd}
+                      {note ? ` (${note})` : ""}
+                    </p>
+                  )
+                )}
+              </div>
               <div className="marker">
                 <MdWorkOutline color={theme.textColor} size={"1vw"} />
               </div>

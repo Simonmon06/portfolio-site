@@ -30,6 +30,11 @@ export interface ILanguageTexts {
       jobTitle: string;
       startDate: string;
       endDate: string;
+      additionalDateRanges?: {
+        startDate: string;
+        endDate: string;
+        note?: string;
+      }[];
       companyDescription: string;
       responsibilities: string[];
       technologies: SkillKey[];

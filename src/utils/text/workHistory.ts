@@ -11,6 +11,12 @@ export const workHistory: ILanguageTexts["workHistory"] = {
       jobTitle: "Web Developer IP SDN Co−op",
       startDate: "May 2023",
       endDate: "Aug 2023",
+      additionalDateRanges: [
+        {
+          startDate: "Jan 2021",
+          endDate: "Dec 2021",
+        },
+      ],
       companyDescription:
         "A wonderful startup charity focused on helping pregnant women throughout their pregnancy by supporting them with care packages tailored to each trimester.",
       responsibilities: [

@@ -65,7 +65,7 @@ export const projects: ILanguageTexts["projects"] = {
       id: "Serverful and Serverless",
       name: "CMPT 756 · Microservices: Serverful vs Serverless (Course Project)",
       description:
-        "Built a full-stack chat platform (React/TypeScript, Tailwind CSS, shadcn/ui, Node/Express, Prisma/PostgreSQL) with authentication, and conversation management. End-to-end design & implementation: UI/UX, data model, and APIs.",
+        "Implemented a microservices-based Post-Comment system with decoupled Post, Comment, Query, and EventBus services, deployed on both a serverful stack (AWS EKS, Nginx Ingress, Docker, MongoDB) and a serverless stack (AWS Lambda, API Gateway, MongoDB Atlas) to compare architectures. Performance tests using JMeter and custom scripts show that while the serverful deployment achieves lower latency under light sequential load, the serverless deployment delivers significantly better average response time under concurrent traffic, highlighting the trade-offs between fixed and on-demand resource provisioning.",
       images: [],
       functionality: [
         "Architected a microservice-based application, building all services from the ground up using Node.js.",
@@ -77,7 +77,6 @@ export const projects: ILanguageTexts["projects"] = {
         "nodeJs",
         "javascipt",
         "css",
-        "nodeJs",
         "express",
         "docker",
         "kubernetes",
