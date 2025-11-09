@@ -48,13 +48,22 @@ const Projects = () => {
           <Project key={index}>
             <h2 className="title">{name}</h2>
             <div className="links">
-              {livePreview && (
+              {livePreview ? (
                 <a href={livePreview} className="livePreviewButton">
                   {languageTexts.projects.viewLivePreview}
                 </a>
+              ) : (
+                github && (
+                  <span
+                    className="livePreviewButton livePreviewPlaceholder"
+                    aria-hidden="true"
+                  >
+                    {languageTexts.projects.viewLivePreview}
+                  </span>
+                )
               )}
               {github && (
-                <a href={github}>
+                <a href={github} className="githubButton">
                   <SiGithub size={"1.7vw"} color={theme.primaryColor} />
                 </a>
               )}
