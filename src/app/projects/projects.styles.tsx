@@ -175,7 +175,12 @@ export const ListItems = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  display: grid;
-  grid-template-columns: 2vw 1fr;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6vw;
   opacity: 0.7;
+
+  svg {
+    flex-shrink: 0;
+  }
 `;

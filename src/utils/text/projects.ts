@@ -71,6 +71,7 @@ export const projects: ILanguageTexts["projects"] = {
         "Architected a microservice-based application, building all services from the ground up using Node.js.",
         "Containerized the services with Docker and deployed them to AWS EKS using Kubernetes, managing ingress with Nginx.",
         "Implemented a custom Event Bus for decoupled communication and automated the CI/CD pipeline with GitHub Actions.",
+        "Check the report in my Github Repo README",
       ],
       technologies: [
         "react",

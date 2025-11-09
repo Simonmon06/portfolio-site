@@ -18,7 +18,7 @@ export const workHistory: ILanguageTexts["workHistory"] = {
         },
       ],
       companyDescription:
-        "A wonderful startup charity focused on helping pregnant women throughout their pregnancy by supporting them with care packages tailored to each trimester.",
+        "Nokia is a technology leader across mobile, fixed and cloud networks, its solutions enable a more productive, sustainable and inclusive world.",
       responsibilities: [
         "Delivered production UI features for Nokia’s carrier Network Services platform, implemented master–detail (nested) tables via Nokia’s internal AG-Grid wrapper; shipped related UI updates for Flex Algo configureation workflows (React/Redux). Worked in a focused 3-person squad (2 software engineers + me)",
         "Navigated in a large codebase consuming 10+ internal npm packages (e.g., nokia-react-table, nokia-react-core-*) from a private registry; integrated shared components and handled versioning/peerDeps across teams",
