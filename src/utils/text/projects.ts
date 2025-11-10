@@ -56,8 +56,6 @@ export const projects: ILanguageTexts["projects"] = {
         "Delivered all the Flask REST endpoints from spec/tests: generate scene, estimate sizes, furniture lookup, include  image→Vision→LLM→search (Cloud Vision, Gemini, SerpAPI/Lens, Imgur)",
       ],
       technologies: ["react", "javascipt", "python", "flask"],
-      // livePreview: "https://crown-clothing.example.com",
-      // github: "#",
       primaryColor: "#000000",
       secoundaryColor: "#FFFFFF",
     },

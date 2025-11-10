@@ -7,47 +7,34 @@ const frontEndIcons: SkillKey[] = [
   "tailwind",
   "shadcn",
   "html",
-  "sass",
   "javascipt",
   "typescipt",
   "redux",
   "jest",
+
   // "cypress",
 ];
 
 const backEndIcons: SkillKey[] = [
   "nodeJs",
   "express",
-  "django",
   "flask",
-  // "dotnet",
-  // "springBoot",
-  // "graphql",
   "postgresql",
   "mongodb",
-  // "redis",
+  "prisma",
   "docker",
-  // "elasticsearch",
-  // "rabbitmqBackend",
 ];
 
 const integrationIcons: SkillKey[] = [
   "jira",
   "gitlab",
-  // "zapier",
-  // "webhooks",
   "oauth",
   "awsLambda",
-  // "googleCloudFunctions",
   "stripe",
-  // "twilio",
-  // "firebase",
-  // "rabbitmq",
-  // "kafka",
-  // "slack",
-  // "zendesk",
-  // "mailgun",
-  // "sendgrid",
+  "aws",
+  "kubernetes",
+  "docker",
+  "nginx",
 ];
 
 const aiIcons: SkillKey[] = [
@@ -57,15 +44,8 @@ const aiIcons: SkillKey[] = [
   "huggingface",
   "scikitlearn",
   "keras",
-  // "spacy",
   "nltk",
-  // "opencv",
   "jupyter",
-  // "fastapi",
-  // "azureml",
-  // "awsSagemaker",
-  // "googleAI",
-  // "generalAI",
 ];
 
 export const skills: ILanguageTexts["skills"] = {
@@ -76,7 +56,7 @@ export const skills: ILanguageTexts["skills"] = {
       name: "Front End",
       id: "frontEnd",
       description:
-        "Crafting clean responsive and intuitive user interfaces that deliver seamless, engaging user experiences. I specialize in translating complex requirements into visually appealing layouts, ensuring accessibility and performance across all devices.<br /><br /> My approach combines modern frameworks, best practices, and a keen eye for design to create applications that users love to interact with.",
+        "My approach to building user interfaces combines modern frameworks with a deep appreciation for design fundamentals. I craft applications that are not only clean, responsive, and accessible, but also visually cohesive, drawing on my experience in UI design and my knowledge of typography, color, and layout. I am adept at translating complex requirements into elegant, high-performance solutions. <br /><br />A strong communicator, I work closely with backend, UI, and QA teams to bridge the gap between technical implementation and design vision, ensuring we successfully deliver on our objectives.",
       icons: frontEndIcons,
     },
     {
