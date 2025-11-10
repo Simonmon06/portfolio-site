@@ -42,12 +42,12 @@ const NavigationMenu = () => {
           </NavigationMenuItem>
         ))}
       </NavigationMenusBox>
-      {/* <AiChatAction onClick={() => setIsAiChatVisible(true)}>
+      <AiChatAction onClick={() => setIsAiChatVisible(true)}>
         <RiChatAiLine size={"1.4vw"} color={theme.white} />
         <div className={`chatBox ${!isAiChatVisible ? "chatBoxHidden" : ""}`}>
           <AIChat closeChatBox={() => setIsAiChatVisible(false)} />
         </div>
-      </AiChatAction> */}
+      </AiChatAction>
     </NavigationMenuContainer>
   );
 };
