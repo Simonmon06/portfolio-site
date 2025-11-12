@@ -3,6 +3,9 @@ import { FaHtml5 } from "react-icons/fa";
 import { IoLogoSass } from "react-icons/io5";
 import { FaJs } from "react-icons/fa";
 import {
+  SiAxios,
+  SiDaisyui,
+  SiFramer,
   SiGithubactions,
   SiGitlab,
   SiJira,
@@ -11,8 +14,10 @@ import {
   SiPrisma,
   SiPython,
   SiRadixui,
+  SiSwiper,
   SiTailwindcss,
   SiTypescript,
+  SiVite,
 } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
@@ -112,6 +117,41 @@ export const SKILLS = {
     icon: {
       normal: <SiRadixui size={"1.1vw"} color="#111827" />, // 用 Radix UI 作为 shadcn/ui 占位
       large: <SiRadixui size={"2vw"} color="#111827" />,
+    },
+  },
+  swiper: {
+    name: "Swiper",
+    icon: {
+      normal: <SiSwiper size={"1.1vw"} color="#6332F6" />,
+      large: <SiSwiper size={"2vw"} color="#6332F6" />,
+    },
+  },
+  motion: {
+    name: "Motion",
+    icon: {
+      normal: <SiFramer size={"1.1vw"} color="#0055FF" />,
+      large: <SiFramer size={"2vw"} color="#0055FF" />,
+    },
+  },
+  axios: {
+    name: "Axios",
+    icon: {
+      normal: <SiAxios size={"1.1vw"} color="#5A29E4" />,
+      large: <SiAxios size={"2vw"} color="#5A29E4" />,
+    },
+  },
+  daisyui: {
+    name: "daisyUI",
+    icon: {
+      normal: <SiDaisyui size={"1.1vw"} color="#5A0EF8" />,
+      large: <SiDaisyui size={"2vw"} color="#5A0EF8" />,
+    },
+  },
+  vite: {
+    name: "Vite",
+    icon: {
+      normal: <SiVite size={"1.1vw"} color="#646CFF" />,
+      large: <SiVite size={"2vw"} color="#646CFF" />,
     },
   },
   html: {

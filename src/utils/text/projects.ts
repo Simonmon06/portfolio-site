@@ -88,5 +88,34 @@ export const projects: ILanguageTexts["projects"] = {
       primaryColor: "#AC3459",
       secoundaryColor: "#F7F7F7",
     },
+    {
+      id: "immersive-space-gallery",
+      name: "Immersive Spaces Gallery",
+      description:
+        "Built a full-screen React experience that curates Unsplash photography, lets viewers switch into an interactive “My Spaces” layout, and layers motion-driven card animations for every slide transition, balancing cinematic presentation with hands-on customization tools.",
+      images: [
+        "/images/gallery/gallery-1.png",
+        "/images/gallery/gallery-2.png",
+        "/images/gallery/gallery-3.png",
+      ],
+      functionality: [
+        "Load a curated Unsplash collection on startup with Axios, map each photo into Swiper slides, and keep gallery state in sync with active slide updates. ",
+        "Offer a top toolbar that flips between default immersive playback and the “My Spaces” workspace, unlocking swipe gestures, centered slide spacing, and subtle blur feedback while editing.",
+        "Let visitors append local images via an add button, instantly navigating to the new slide and playing a spring-based Motion animation to emphasize the freshly created space.",
+      ],
+      technologies: [
+        "react",
+        "vite",
+        "tailwind",
+        "daisyui",
+        "swiper",
+        "motion",
+        "axios",
+      ],
+      livePreview: "https://worksample-gilt.vercel.app/",
+      github: "https://github.com/Simonmon06/worksample",
+      primaryColor: "#AC3459",
+      secoundaryColor: "#F7F7F7",
+    },
   ],
 };
